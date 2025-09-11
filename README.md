@@ -151,28 +151,6 @@ When reporting results, include:
 
 ---
 
-## Troubleshooting
-
-**CUDA out of memory**
-~~~bash
-python train_decision_transformer.py --batch_size 16
-~~~
-
-**IBM Quantum connection errors**
-~~~bash
-# Validate with a local simulator first
-python main.py --backend simulator
-~~~
-
-**Dependency conflicts**
-~~~bash
-conda create -n quantum-circuit python=3.9
-conda activate quantum-circuit
-pip install -r requirements.txt  # if you maintain one
-~~~
-
----
-
 ## Contributing
 
 Contributions are welcome. Potential directions:
@@ -198,10 +176,11 @@ If this framework assists your research, consider citing:
 
 ~~~bibtex
 @misc{quantum_circuit_oat_framework,
-  title  = {Quantum Circuit Analysis \& Generation Framework},
-  author = {Your Name and Contributors},
+  title  = {OPTIMIZING QUANTUM CIRCUIT DESIGN THROUGH DECISION
+TRANSFORMERS: IN REAL QUANTUM COMPUTER},
+  author = {Junyoung Jung},
   year   = {2025},
-  note   = {https://github.com/<your-org>/<your-repo>}
+  note   = {https://github.com/junyoung7727/qforge}
 }
 ~~~
 
@@ -209,4 +188,4 @@ If this framework assists your research, consider citing:
 
 ## Related Materials
 
-See `validation_results/` and any `paper_figure*.pdf` files for figures and analysis scripts corresponding to your experiments.
+See `quantum_analysis_plots/` and any `paper_figure*.pdf` files for figures and analysis scripts corresponding to your experiments.
