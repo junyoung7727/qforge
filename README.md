@@ -1,4 +1,4 @@
-# Quantum Circuit Analysis & Generation Framework
+# Optimizing Quantum Circuit Design Through Decision Transformers: In Real Quantum Computer
 
 A practical framework for **analyzing** quantum circuit properties and **generating** new circuits conditioned on target objectives. The system combines a **Decision Transformer (DT)** with **graph neural network (GNN)** embeddings to predict circuit properties and to autoregressively generate ansätze under hardware constraints.
 
@@ -176,8 +176,7 @@ If this framework assists your research, consider citing:
 
 ~~~bibtex
 @misc{quantum_circuit_oat_framework,
-  title  = {OPTIMIZING QUANTUM CIRCUIT DESIGN THROUGH DECISION
-TRANSFORMERS: IN REAL QUANTUM COMPUTER},
+  title  = {Optimizing Quantum Circuit Design Through Decision Transformers: In Real Quantum Computer},
   author = {Junyoung Jung},
   year   = {2025},
   note   = {https://github.com/junyoung7727/qforge}
