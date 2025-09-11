@@ -1,0 +1,193 @@
+================================================================================
+QUANTUM CIRCUIT DATA ANALYSIS - COMPREHENSIVE STATISTICS
+================================================================================
+
+DATASET OVERVIEW
+----------------------------------------
+Total circuits analyzed: 6708
+  - Simulator: 6600 circuits (98.4%)
+  - Hardware: 108 circuits (1.6%)
+Qubit range: 3 - 50
+Depth range: 4 - 153
+
+SIMULATOR DATA STATISTICS
+----------------------------------------
+Number of circuits: 6600
+
+Fidelity:
+  Mean: 1.000000
+  Std:  0.000000
+  Min:  1.000000
+  Max:  1.000000
+  Median: 1.000000
+  Valid samples: 6600/6600
+  Q1 (25%): 1.000000
+  Q3 (75%): 1.000000
+  IQR: 0.000000
+
+Robust Fidelity:
+  Mean: 1.000000
+  Std:  0.000000
+  Min:  1.000000
+  Max:  1.000000
+  Median: 1.000000
+  Valid samples: 6600/6600
+  Q1 (25%): 1.000000
+  Q3 (75%): 1.000000
+  IQR: 0.000000
+
+KL Divergence (Expressibility):
+  Mean: 2.911921
+  Std:  3.731993
+  Min:  0.000183
+  Max:  23.025851
+  Median: 1.299732
+  Valid samples: 5756/6600
+  Q1 (25%): 0.466540
+  Q3 (75%): 3.913279
+  IQR: 3.446738
+
+Entanglement:
+  Mean: 0.458944
+  Std:  0.304902
+  Min:  -0.000000
+  Max:  0.988767
+  Median: 0.486090
+  Valid samples: 6324/6600
+  Q1 (25%): 0.182882
+  Q3 (75%): 0.725674
+  IQR: 0.542792
+
+JS Divergence:
+  Mean: 0.086698
+  Std:  0.105501
+  Min:  0.000046
+  Max:  0.693147
+  Median: 0.050400
+  Valid samples: 5756/6600
+  Q1 (25%): 0.016704
+  Q3 (75%): 0.110536
+  IQR: 0.093832
+
+L2 Norm:
+  Mean: 0.017997
+  Std:  0.017271
+  Min:  0.000748
+  Max:  0.136221
+  Median: 0.012518
+  Valid samples: 5756/6600
+  Q1 (25%): 0.006937
+  Q3 (75%): 0.023081
+  IQR: 0.016144
+
+Circuit Complexity:
+  Qubits - Mean: 8.00, Range: 3-13
+  Depth  - Mean: 49.50, Range: 4-140
+
+HARDWARE DATA STATISTICS
+----------------------------------------
+Number of circuits: 108
+
+Fidelity:
+  Mean: 0.359403
+  Std:  0.269179
+  Min:  0.001953
+  Max:  0.800781
+  Median: 0.331055
+  Valid samples: 70/108
+  Q1 (25%): 0.093262
+  Q3 (75%): 0.673340
+  IQR: 0.580078
+
+Robust Fidelity:
+  Mean: 0.599565
+  Std:  0.408570
+  Min:  0.001953
+  Max:  1.000000
+  Median: 0.782227
+  Valid samples: 88/108
+  Q1 (25%): 0.124023
+  Q3 (75%): 0.969727
+  IQR: 0.845703
+
+KL Divergence (Expressibility):
+  Mean: 9.413330
+  Std:  2.595885
+  Min:  3.634908
+  Max:  15.397410
+  Median: 9.308237
+  Valid samples: 108/108
+  Q1 (25%): 7.447084
+  Q3 (75%): 11.294236
+  IQR: 3.847152
+
+Entanglement:
+  Mean: 1.033610
+  Std:  0.456727
+  Min:  0.428819
+  Max:  1.882292
+  Median: 1.078248
+  Valid samples: 108/108
+  Q1 (25%): 0.514102
+  Q3 (75%): 1.387681
+  IQR: 0.873580
+
+JS Divergence: No valid data (all zeros)
+
+L2 Norm: No valid data (all zeros)
+
+Circuit Complexity:
+  Qubits - Mean: 27.50, Range: 15-50
+  Depth  - Mean: 57.00, Range: 16-153
+
+COMPARATIVE ANALYSIS (SIMULATOR vs HARDWARE)
+--------------------------------------------------
+
+Fidelity:
+  Simulator mean: 1.000000
+  Hardware mean:  0.359403
+  Absolute diff:  0.640597
+  Relative diff:  64.06%
+  Simulator > Hardware by 178.2%
+
+Robust Fidelity:
+  Simulator mean: 1.000000
+  Hardware mean:  0.599565
+  Absolute diff:  0.400435
+  Relative diff:  40.04%
+  Simulator > Hardware by 66.8%
+
+KL Divergence (Expressibility):
+  Simulator mean: 2.911921
+  Hardware mean:  9.413330
+  Absolute diff:  6.501409
+  Relative diff:  69.07%
+  Hardware > Simulator by 223.3%
+
+Entanglement:
+  Simulator mean: 0.458944
+  Hardware mean:  1.033610
+  Absolute diff:  0.574666
+  Relative diff:  55.60%
+  Hardware > Simulator by 125.2%
+
+CORRELATION ANALYSIS
+------------------------------
+Strong correlations (|r| > 0.5):
+  num_qubits ↔ fidelity: r = -0.580
+  depth ↔ kl_divergence: r = -0.565
+  depth ↔ entanglement: r = 0.680
+  fidelity ↔ robust_fidelity: r = 0.903
+  kl_divergence ↔ entanglement: r = -0.530
+
+DATA QUALITY ASSESSMENT
+-----------------------------------
+Fidelity:
+  Valid data: 6670/6708 (99.4%)
+  Zero values: 38 (0.6%)
+Kl Divergence:
+  Valid data: 5864/6708 (87.4%)
+  Zero values: 844 (12.6%)
+Entanglement:
+  Valid data: 6432/6708 (95.9%)
+  Zero values: 276 (4.1%)
