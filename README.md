@@ -63,7 +63,20 @@ cp OAT_Model/.env.example OAT_Model/.env
 
 ## Quick Start
 
-### 1) Train a property predictor
+### 1) Run Quantum Circuit Generation with 3 Properties measurement(Fidelity, Entanglement, Expressibility)
+
+~~~bash
+cd Ansatz_Data_ver2
+
+# Batch analysis
+python main.py
+
+# Statistical validation / sanity checks
+python run_statistical_validation.py
+~~~
+
+
+### 2) Train a property predictor
 
 ~~~bash
 cd OAT_Model/src
@@ -81,7 +94,7 @@ python unified_experiment_runner.py \
   --device cuda
 ~~~
 
-### 2) Train the Decision Transformer (generation)
+### 3) Train the Decision Transformer (generation)
 
 ~~~bash
 cd OAT_Model
@@ -94,18 +107,6 @@ python train_decision_transformer.py \
 
 # Autoregressive circuit generation (uses the latest checkpoint)
 python examples/autoregressive_circuit_generation.py
-~~~
-
-### 3) Run circuit property analysis
-
-~~~bash
-cd Ansatz_Data_ver2
-
-# Batch analysis
-python main.py
-
-# Statistical validation / sanity checks
-python run_statistical_validation.py
 ~~~
 
 ---
