@@ -57,7 +57,7 @@ cp OAT_Model/.env.example OAT_Model/.env
 # Edit OAT_Model/.env and set: IBM_TOKEN=<your-token>
 ~~~
 
-> **Note:** `torch-geometric` may require platform-specific wheels. Refer to the official installation guide if the generic install fails.
+> **Note:** Simply use 'install_pytorch_geometric.sh' for copy and run to install torch-geometric.
 
 ---
 
